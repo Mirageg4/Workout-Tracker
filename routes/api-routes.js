@@ -35,9 +35,9 @@ module.exports = function(app) {
     });
 
     app.get("/api/workouts/range", (req, res, next) => {
-        let chooseDate = new Date();
-        chooseDate = chooseDate.setDate(chooseDate.getDate() -7);
-        db.Workout.find({day: {$gte: chooseDate}})
+        let filterDate = new Date();
+        filterDate = filterDate.setDate(filterDate.getDate() -7);
+        db.Workout.find({day: {$gte: filterDate}})
             .then(workouts => {
                 res.json(workouts);
             })

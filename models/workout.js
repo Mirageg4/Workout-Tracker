@@ -1,4 +1,5 @@
 const mongoose = require("mongoose");
+//mongoose db key values
 const Schema = mongoose.Schema;
 const exerciseSchema = new Schema({
     name: {
@@ -38,6 +39,7 @@ const exerciseSchema = new Schema({
     strict: true
 });
 
+//Day - Unix Timestamp return for current time
 const workoutSchema = new Schema({
     day: {
         type: Date,
@@ -48,7 +50,7 @@ const workoutSchema = new Schema({
 {
     strict: true
 });
-
+// model connection
 const Workout = mongoose.model("Workout", workoutSchema);
 
 module.exports = Workout;

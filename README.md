@@ -23,6 +23,8 @@
 
 <hr>
 <img src ="./public/Screenshot-WT.png"/>
-<hr>              
+<hr> 
+<img src ="./public/Screenshot-WT2.png"/>
+<hr>             
 <p>License: Project is licensed under the MIT License. 
 See <a href ="LICENSE.md">LICENSE</a> file for details.

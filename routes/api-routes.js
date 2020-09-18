@@ -5,7 +5,12 @@ module.exports = function(app) {
     app.get("/api/workouts", (req, res, next) => {
         db.Workout.find({})
             .then(workouts => {
-                res.json(workouts);
+
+                res.json(workouts.map(({day, exercises}) => ({
+                    day,
+                    exercises,
+                    totalDuration: exercises.reduce((previousTotal, exercise) => previousTotal + exercise.duration, 0)
+                })));
             })
             .catch(err => {
                 console.log(err);
@@ -14,7 +19,7 @@ module.exports = function(app) {
     });
 // Post - Create Route
     app.post("/api/workouts", (req, res, next) => {
-        db.Workout.create(body)
+        db.Workout.create(req.body)
             .then(workout => {
                 res.json(workout);
             })

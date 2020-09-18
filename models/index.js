@@ -1,4 +1,4 @@
 //object models
 module.exports = {
-    workout: require("./Workout"),
+    Workout: require("./Workout"),
 };

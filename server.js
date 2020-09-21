@@ -21,11 +21,7 @@ client.connect(err => {
 
 
 
-
-
-
-
-
+//Settings previous to MongoDB Atlas
 
 app.use(logger("dev"));
 

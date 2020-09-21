@@ -7,7 +7,7 @@ const app = express();
 
 
 
-//MongoDB Atlas
+//MongoDB Atlas Code Snippet with user & pw
 
 const MongoClient = require('mongodb').MongoClient;
 const uri = "mongodb+srv://jam:jman@cluster0.a474y.mongodb.net/workout?retryWrites=true&w=majority";

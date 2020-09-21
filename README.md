@@ -17,8 +17,9 @@
 <h2>Pull Requests welcome for contribution</h2>
 <hr>
 <p>John Manouse</p>
-<p>Live Link: <a href="https://mirageg4.github.io/Workout-Tracker/"
->Workout-Tracker Live Link</a></p>
+<!--<p>Live Link: <a href="https://mirageg4.github.io/Workout-Tracker/"
+>Workout-Tracker Live Link</a></p>-->
+<p>Live Link: <a href="https://workout411.herokuapp.com/">Workout-Tracker Live Link</a></p>
 <p>Github: <a href="https://github.com/Mirageg4/Workout-Tracker">Workout-Tracker Repo</a></p>
 
 <hr>

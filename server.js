@@ -9,14 +9,7 @@ const app = express();
 
 //MongoDB Atlas Code Snippet with user & pw
 
-const MongoClient = require('mongodb').MongoClient;
-const uri = "mongodb+srv://jam:jman@cluster0.a474y.mongodb.net/workout?retryWrites=true&w=majority";
-const client = new MongoClient(uri, { useNewUrlParser: true });
-client.connect(err => {
-  const collection = client.db("test").collection("devices");
-  // perform actions on the collection object
-  client.close();
-});
+
 
 
 
